@@ -24,7 +24,7 @@ export default {
     }
   },
   upload: {
-    mode: 'stream',
+    mode: 'file',
     tmpdir: path.join(__dirname, '../../tmp'),
     // whitelist: [],
   }
