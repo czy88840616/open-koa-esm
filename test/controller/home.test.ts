@@ -1,7 +1,8 @@
 import { createHttpRequest } from '@midwayjs/mock';
 import { Application } from '@midwayjs/koa';
 import assert from 'assert';
-import { getApp } from '../setup.mjs';
+
+import { getApp } from '#@/setup.mjs';
 
 describe('test/controller/home.test.ts', () => {
 
