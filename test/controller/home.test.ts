@@ -1,9 +1,11 @@
 import { createHttpRequest } from '@midwayjs/mock';
 import { Application } from '@midwayjs/koa';
 import assert from 'assert';
-import { getApp } from '../setup.mjs';
 
-describe('test/controller/home.test.ts', () => {
+import { fileShortPath } from '#@/helper.js'
+import { getApp } from '#@/setup.mjs';
+
+describe(fileShortPath(import.meta.url), () => {
 
   it('should GET /', async () => {
     const app: Application = getApp();
