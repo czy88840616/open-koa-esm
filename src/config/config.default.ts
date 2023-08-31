@@ -23,4 +23,9 @@ export default {
       }
     }
   },
+  upload: {
+    mode: 'stream',
+    tmpdir: path.join(__dirname, '../../tmp'),
+    // whitelist: [],
+  }
 } as MidwayConfig;

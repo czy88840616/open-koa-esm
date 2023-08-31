@@ -8,6 +8,7 @@ import { ReportMiddleware } from '#middleware/report.middleware.js';
 import DefulatConfig from './config/config.default.js';
 import UnittestConfig from './config/config.unittest.js';
 import * as orm from '@midwayjs/typeorm';
+import * as upload from '@midwayjs/upload';
 // import { join } from 'node:path';
 // import { dirname } from 'node:path'
 // import { fileURLToPath } from 'node:url'
@@ -23,6 +24,7 @@ import * as orm from '@midwayjs/typeorm';
       component: info,
       enabledEnvironment: ['local'],
     },
+    upload,
   ],
   importConfigs: [
     // join(__dirname, 'config'),
